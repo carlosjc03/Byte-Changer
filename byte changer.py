@@ -86,8 +86,7 @@ def hex_calculator(initial_address, total_addresses):
     str,int->list
     PRE:
     """
-    list_adresses=[]
-    #list_adresses=[initial_address.upper()] #if you want to start from initial addres and and not from the following, remove left "#"
+    list_adresses=[initial_address.upper()] 
     b = "4" #if you want to sum 8 bytes remove 4 and write 8, if you want to sum 16 bytes remove 4 and write 10,etc  the corresponding decimal number in hexadecimal
     sum = (int(initial_address, 16) + int(b, 16)) 
     #print(hex(sum).upper())
@@ -106,7 +105,7 @@ print("---------------")
 print("")
 print("1.-  Byte Changer")
 print("2.-  Hex Address Calculator")
-print("3.-  Both (Byte Changer & Hex Address Calculator")
+print("3.-  Both (Byte Changer & Hex Address Calculator)")
 print("")
 
 option=int(input("Choose an option: "))
