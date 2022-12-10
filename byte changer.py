@@ -137,7 +137,7 @@ elif option==3:
     your_input=input("\nIntroduce bytes: ")
     if check_text():
         bytes_list=reverse_bytes()
-        your_address=input("\nEnter the address from which the following will be created (if u want to start from this address check line 90): ")#if u want to start from this address check line 90
+        your_address=input("\nEnter the address from which the following will be created: ")
         print("")
         number_of_addresses=len(bytes_list)
         hex_adresses=hex_calculator(your_address,number_of_addresses)
