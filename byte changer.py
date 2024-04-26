@@ -141,8 +141,10 @@ elif option==3:
         print("")
         number_of_addresses=len(bytes_list)
         hex_adresses=hex_calculator(your_address,number_of_addresses)
+        print("D3000000 14000000")#change 14 to another number if it's neccesary
         for i in range(len(bytes_list)):
             print(f"00{hex_adresses[i]} {bytes_list[i]}") #you can add number u want like "0" to the left of {hex_adresses[i]} like print(f"00{hex_adresses[i]} {bytes_list[i]}")
+        print("D2000000 00000000")
     else:
         print ("\nError, write a suitable number of bytes")
         print("")
@@ -150,7 +152,6 @@ elif option==3:
     
 
         
-
 
 
 
