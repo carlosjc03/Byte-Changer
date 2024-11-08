@@ -16,7 +16,7 @@ This is where this program really comes in handy. Simply enter **all the bytes y
 The program also checks if the number of bytes is valid, by checking if the total number of bytes is divisible by 8 (because 8 are the characters in each line of a Nintendo Cheat).
 
 You have also to consider these things:
-<ol>You have to write your base address **without first two numbers**, that is, if your address is **084C0B30**, you must write only **4C0B30** or the cheat will be wrong. This is done beacuse in Citra and some 3ds games, you need to fix the address with D3000000 XX000000 (where XX is the first **two numbers** of your base address) or the cheat won't work. By default first two bytes are fixed to be 14 (like if the adress will be 144C0B30), but you can change it writing your desired value </ol>
-<ol>You can modify some parameters of this program to suit your need. For example you can modify the number of characters of each line, meaning you can use this program to make cheats for other platforms</ol>
+  You have to write your base address **without first two numbers**, that is, if your address is **084C0B30**, you must write only **4C0B30** or the cheat will be wrong. This is done beacuse in Citra and some 3ds games, you need to fix the address with D3000000 XX000000 (where XX is the first **two numbers** of your base address) or the cheat won't work. By default first two bytes are fixed to be 14 (like if the adress will be 144C0B30), but you can change it writing your desired value </ol>
+  You can modify some parameters of this program to suit your need. For example you can modify the number of characters of each line, meaning you can use this program to make cheats for other platforms
 
 
