@@ -82,7 +82,7 @@ root = tk.Tk()
 root.title("Byte Changer & Hex Calculator")
 root.geometry("600x500")
 
-tk.Label(root, text="Introduce bytes:").pack()
+tk.Label(root, text="Input bytes:").pack()
 input_text = tk.Text(root, height=5)
 input_text.pack()
 
@@ -92,7 +92,7 @@ address_entry.pack()
 
 tk.Button(root, text="Process Bytes", command=process_bytes).pack()
 
-tk.Label(root, text="Output:").pack()
+tk.Label(root, text="\nOutput:").pack()
 output_text = tk.Text(root, height=10)
 output_text.pack()
 
