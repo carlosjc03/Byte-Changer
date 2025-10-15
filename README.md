@@ -1,22 +1,77 @@
-# Byte-Changer
-Exchanges program position bytes as a cheat engine and also, from an initial memory address, finds out the memory addresses corresponding to those bytes. Ideal for making cheats for NDS or 3DS!
+# 🧠 Byte-Changer
 
-In Cheat Engine, **byte positions are reversed** compared to how they actually have to look when making a cheat. For example if you wanna make a cheat based on the cheat engine values, you have to reverse them.
+> A simple **Python GUI tool** to reverse and generate **Action Replay cheats** for Nintendo **NDS and 3DS**.  
+> Supports byte manipulation, memory address formatting, and a built-in graphical interface for fast cheat creation.
 
-![image](https://github.com/user-attachments/assets/4a9b1823-380a-4991-94ec-4ea4f9d2e761)
+**Byte-Changer** is a lightweight Python GUI tool that helps you exchange, reverse, and calculate program position bytes — just like a cheat engine — and automatically generate valid **Action Replay codes** for Nintendo **NDS / 3DS** games.
 
-As you can see in the capture, the values ​​are **CD CC 70 43**. However, if we put these values ​​as is in our determined memory address (for example let's suppose that the address is 084C0B30), in theory we should write 084C0B30 CDCC7043, **but it's NOT like that**. If you write that, **what will actually be written to your memory address is this:**
+> 🐍 Requires **Python 3.9 or higher** (no external dependencies — Tkinter is included by default).
 
-![image](https://github.com/user-attachments/assets/f8c3b2ed-b3ee-40b7-960f-9d4e2bad69a3)
+---
 
-This is usually not a problem for cheats that only take 1 or 2 lines of code. The problem is when the cheat takes up many lines, where having to manually reverse the text is quite tedious.
+## 🚀 Features
 
-This is where this program really comes in handy. Simply enter **all the bytes you want to include in your code** **and the base memory address**, **and the program will be able to generate a cheat with all the correct values ​​in just a few seconds.**
+✅ Reverse Cheat Engine byte order automatically  
+✅ Generate **Action Replay cheats** instantly from raw bytes  
+✅ Works as a **Python-based cheat converter** for NDS & 3DS games  
+✅ Built-in byte validation (must be multiple of 8)  
+✅ Customizable base address and prefix (e.g. D3000000 XX000000)  
+✅ Simple and responsive GUI  
 
-The program also checks if the number of bytes is valid, by checking if the total number of bytes is divisible by 8 (because 8 are the characters in each line of a Nintendo Cheat).
+---
 
-You have also to consider these things:
-  You have to write your base address **without first two numbers**, that is, if your address is **084C0B30**, you must write only **4C0B30** or the cheat will be wrong. This is done beacuse in Citra and some 3ds games, you need to fix the address with D3000000 XX000000 (where XX is the first **two numbers** of your base address) or the cheat won't work. By default first two bytes are fixed to be 14 (like if the adress will be 144C0B30), but you can change it writing your desired value </ol>
-  You can modify some parameters of this program to suit your need. For example you can modify the number of characters of each line, meaning you can use this program to make cheats for other platforms
+## 🧩 How It Works
 
+In **Cheat Engine**, byte order is reversed compared to how it should appear in a real Action Replay cheat.
+
+For example, if you see the values `CD CC 70 43` in Cheat Engine, you might think you should write: `CDCC7043`  
+
+…but that’s incorrect!  
+The actual data that will be written in memory is **`4370CCCD`**, since Cheat Engine displays the bytes in **reverse order** compared to how they appear in the real memory layout.
+
+![Example 1](https://github.com/user-attachments/assets/4a9b1823-380a-4991-94ec-4ea4f9d2e761)
+![Example 2](https://github.com/user-attachments/assets/f8c3b2ed-b3ee-40b7-960f-9d4e2bad69a3)
+
+**Byte-Changer** fixes this automatically — simply:
+1. Paste the bytes you want to use.
+2. Enter the base memory address.
+3. Click “Process Bytes”.  
+
+The program will output a fully formatted **Action Replay cheat** with correctly ordered bytes.
+
+---
+
+## ⚙️ Address Rules & Validation
+
+- ✳️ You must enter the **full 8-digit base address** (e.g., `084C0B30`).  
+- 🧱 The tool automatically handles the upper bytes (`D3000000 XX000000`) used in **Citra/Desmume** or **NDS/3DS** cheats.  
+- 🔢 The total number of bytes must be **divisible by 8**, as each Action Replay line represents 8 characters.  
+- 💡 You can use this program as a **byte calculator** for other platforms by changing the line length settings.
+
+---
+
+## 🪟 GUI Preview
+
+The GUI lets you:
+- Input raw bytes directly  
+- Define your base address  
+- Copy generated cheats instantly  
+
+<p align="center">
+  <img width="548" height="451" alt="Byte-Changer GUI" src="https://github.com/user-attachments/assets/8a78f992-5868-46e6-9113-c1b5e53c1106" />
+  <br>
+  <em>Byte-Changer GUI Interface Preview</em>
+</p>
+
+---
+
+## 💻 Installation & Usage
+
+1. Make sure you have **Python 3.9 or higher** installed.  
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/Byte-Changer.git
+   cd Byte-Changer
+3. Run the GUI:
+   ```bash python bytechanger_gui.py
 
