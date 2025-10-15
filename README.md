@@ -1,8 +1,5 @@
 # 🧠 Byte-Changer
 
-> A simple **Python GUI tool** to reverse and generate **Action Replay cheats** for Nintendo **NDS and 3DS**.  
-> Supports byte manipulation, memory address formatting, and a built-in graphical interface for fast cheat creation.
-
 **Byte-Changer** is a lightweight Python GUI tool that helps you exchange, reverse, and calculate program position bytes — just like a cheat engine — and automatically generate valid **Action Replay codes** for Nintendo **NDS / 3DS** games.
 
 > 🐍 Requires **Python 3.9 or higher** (no external dependencies — Tkinter is included by default).
