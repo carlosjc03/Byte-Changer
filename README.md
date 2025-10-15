@@ -52,7 +52,9 @@ The program will output a fully formatted **Action Replay cheat** with correctly
 The GUI lets you:
 - Input raw bytes directly  
 - Define your base address  
-- Copy generated cheats instantly  
+- Copy generated cheats instantly
+
+<br>
 
 <p align="center">
   <img width="548" height="451" alt="Byte-Changer GUI" src="https://github.com/user-attachments/assets/8a78f992-5868-46e6-9113-c1b5e53c1106" />
@@ -71,5 +73,5 @@ The GUI lets you:
    cd Byte-Changer
 3. Run the GUI:
    ```bash
-   python bytechanger_gui.py
+   python ByteChanger-GUI.py
 
