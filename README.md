@@ -67,8 +67,9 @@ The GUI lets you:
 1. Make sure you have **Python 3.9 or higher** installed.  
 2. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/Byte-Changer.git
+   git clone https://github.com/carlosjc03/Byte-Changer.git
    cd Byte-Changer
 3. Run the GUI:
-   ```bash python bytechanger_gui.py
+   ```bash
+   python bytechanger_gui.py
 
