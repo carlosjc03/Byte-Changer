@@ -19,7 +19,7 @@
 
 ## 🧩 How It Works
 
-In **Cheat Engine**, byte order is reversed compared to how it should appear in a real Action Replay cheat.
+In **Cheat Engine**, byte order is reversed compared to how it should appear in a real Action Replay cheat (that's called **Little Endian Notation**).
 
 For example, if you see the values `CD CC 70 43` in Cheat Engine, you might think you should write: `CDCC7043`  
 
