@@ -3,6 +3,7 @@
 **Byte-Changer** is a lightweight Python GUI tool that helps you exchange, reverse, and calculate program position bytes — just like a cheat engine — and automatically generate valid **Action Replay codes** for Nintendo **NDS / 3DS** games.
 
 > 🐍 Requires **Python 3.9 or higher** (no external dependencies — Tkinter is included by default).
+> ⚡ Created by **Scontra**, admin of [Inazuma Life](https://inazumalife.com), to speed up the workflow of finding offsets and creating custom game cheats.
 
 ---
 
@@ -74,4 +75,3 @@ The GUI lets you:
 3. Run the GUI:
    ```bash
    python ByteChanger-GUI.py
-
